@@ -22,7 +22,9 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "skipLibCheck": true, // firebase error
+    // https://github.com/angular/angularfire/issues/3255
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
