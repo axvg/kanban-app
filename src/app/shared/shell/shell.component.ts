@@ -14,5 +14,6 @@ export class ShellComponent {
       map((result) => result.matches),
       shareReplay()
     );
+
   constructor(private breakPointObserver: BreakpointObserver) {}
 }

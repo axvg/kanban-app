@@ -5,18 +5,21 @@
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="true"
-  >
+    [opened]="false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/" (click)="drawer.close()">Home</a>
-      <a mat-list-item routerLink="/login" (click)="drawer.close()">Login</a>
-      <a mat-list-item routerLink="/kanban" (click)="drawer.close()"
-        >Kanban Demo</a
-      >
-      <a mat-list-item routerLink="/customers" (click)="drawer.close()"
-        >SSR Demo</a
-      >
+      <a mat-list-item routerLink="/" (click)="drawer.close()">
+        Home
+      </a>
+      <a mat-list-item routerLink="/login" (click)="drawer.close()">
+        Login
+      </a>
+      <a mat-list-item routerLink="/kanban" (click)="drawer.close()">
+        Kanban Demo
+      </a>
+      <a mat-list-item routerLink="/customers" (click)="drawer.close()">
+        SSR Demo
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -26,8 +29,7 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
-      >
+        *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span class="logo" routerLink="/">🔥 Angular Supabase</span>
@@ -45,7 +47,15 @@
       <mat-menu #menu="matMenu">
         <a mat-menu-item href="https://github.com/axvg">
           <i>💬</i>
-          <span>lorem ipsum</span>
+          <span>github</span>
+        </a>
+        <a mat-menu-item href="https://github.com/axvg">
+          <i>💬</i>
+          <span>github</span>
+        </a>
+        <a mat-menu-item href="https://github.com/axvg">
+          <i>💬</i>
+          <span>github</span>
         </a>
       </mat-menu>
     </mat-toolbar>
