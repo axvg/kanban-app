@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kanban-app-b4319": {
+      "hosting": {
+        "kanban-app": [
+          "kanban-app-b4319"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kanban-app-b4319"
+  }
+}
